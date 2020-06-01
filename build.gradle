@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'io.github.pulverizer.ringfinder.Main'
+    }
+}
+
+group 'io.github.pulverizer'
+version '0.0.1'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.8.6'
+}
+
+jar {
+}
