@@ -24,7 +24,7 @@ class DataFilter {
     //Radius: Km
 
     private static final String POPULATED_DOWNLOAD_URL = "https://www.edsm.net/dump/systemsPopulated.json.gz";
-    private static final String OTHER_DOWNLOAD_URL = "https://www.edsm.net/dump/systemsWithCoordinates7days.json.gz";
+    private static final String OTHER_DOWNLOAD_URL = "https://www.edsm.net/dump/bodies7days.json.gz";
 
     public static final File POPULATED_FILE = new File(POPULATED_DOWNLOAD_URL.substring(POPULATED_DOWNLOAD_URL.lastIndexOf('/') + 1, POPULATED_DOWNLOAD_URL.length() - 3));
     public static final File OTHER_FILE = new File(OTHER_DOWNLOAD_URL.substring(OTHER_DOWNLOAD_URL.lastIndexOf('/') + 1, OTHER_DOWNLOAD_URL.length() - 3));

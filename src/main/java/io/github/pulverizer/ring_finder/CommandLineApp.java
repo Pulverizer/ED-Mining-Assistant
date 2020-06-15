@@ -17,7 +17,31 @@ public class CommandLineApp {
     private static DataFilter dataFilter;
 
     public static void main(String[] args) {
+        OUTPUT.println("***          Welcome to ED: Mining Assistant         ***");
+        OUTPUT.println();
+
         dataFilter = new DataFilter();
+
+        runMenu();
+
+        OUTPUT.println();
+        OUTPUT.println("***     Thank you for using ED: Mining Assistant     ***");
+    }
+
+    private static void printMenu() {
+
+    }
+
+    private static void runMenu() {
+        printMenu();
+
+        /*try {
+            scan.nextInt();
+            scan.nextLine();
+        } catch (Exception e) {
+            OUTPUT.println();
+            OUTPUT.println("Invalid Input - Please try again.");
+        }*/
 
         searchPopulatedSystemsOnly();
         selectBeltType();
